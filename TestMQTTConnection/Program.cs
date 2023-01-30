@@ -59,16 +59,12 @@ namespace TestMQTTConnection // Note: actual namespace depends on the project na
         {
             var certificateCA = GetCACertificate("MLCL_ROOT_CA").FirstOrDefault();
 
-
-
             var certificateClient = GetClientCertificate(certificateName).First();
 
             if (certificateClient != null)
             {
-                //  Console.WriteLine("SubjectName" + certificateClient.SubjectName);
-                //  Console.WriteLine("" + certificateClient.IssuerName);
-                //  Console.WriteLine("" + certificateClient.IssuerName);
-                ;
+                Console.WriteLine("SubjectName" + certificateClient.SubjectName);
+
 
                 foreach (X509Extension extension in certificateClient.Extensions)
                 {
