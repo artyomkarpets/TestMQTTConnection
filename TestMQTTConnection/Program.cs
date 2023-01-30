@@ -7,7 +7,7 @@ using System.Text;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace TestMQTTConnection // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
